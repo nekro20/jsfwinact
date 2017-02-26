@@ -1,25 +1,34 @@
 <template>
   <section>
     <filter-panel></filter-panel>
-    <cat-item></cat-item>
+    <div class="col s9" v-for="cat in cats">
+      <cat-item :id="cat.id"></cat-item>
+    </div>
   </section>
 </template>
 
 <script>
 import filterPanel from '../components/filterPanel.vue'
 import catItem from '../components/catItem.vue'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'cats',
   data () {
     return {}
   },
-  methods: {
-    
-  },
   components: {
     filterPanel,
     catItem
+  },
+  computed: mapGetters({
+    cats: 'allCats'
+  }),
+  methods: mapActions([
+    'addToCart'
+  ]),
+  created () {
+    this.$store.dispatch('getAllCats')
   }
 }
 </script>

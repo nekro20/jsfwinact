@@ -8,6 +8,13 @@
       </div>
     </div>
   </div>
+  <footer class="page-footer orange">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
   </main>
 </template>
 
@@ -16,14 +23,6 @@ import headerBar from '../components/headerBar.vue'
 
 export default {
   name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
-  methods: {
-    
-  },
   components: {headerBar}
 }
 </script>

@@ -8,6 +8,7 @@ Vue.use(VueRouter)
 var router = new VueRouter({
     routes: [
         {path: '/', component: Cats},
+        {path: '', redirect: '/'},
         {path: '/details/:id', component: Details},
         {path: '/cart', component: CartPage}
     ]

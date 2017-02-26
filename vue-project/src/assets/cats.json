@@ -1,802 +1,1049 @@
 [
   {
-    "image": "../assets/images/cats8.jpg",
-    "age": 8,
-    "price": 17551,
-    "color": "white black red",
-    "name": "Leach",
-    "_id": "58b318625fff65b8e22fa74a"
+    "image": "../assets/images/cats1.jpg",
+    "age": 3,
+    "price": 47047,
+    "color": [
+      "gray"
+    ],
+    "name": "Evelyn",
+    "id": "58b34328364add82a8444559"
+  },
+  {
+    "image": "../assets/images/cats2.jpg",
+    "age": 6,
+    "price": 36257,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Lucille",
+    "id": "58b343283978445a724210f6"
   },
   {
     "image": "../assets/images/cats2.jpg",
     "age": 3,
-    "price": 44659,
-    "color": "red",
-    "name": "Terrell",
-    "_id": "58b318624bea27188544a3ca"
-  },
-  {
-    "image": "../assets/images/cats5.jpg",
-    "age": 9,
-    "price": 44440,
-    "color": "white black",
-    "name": "Nona",
-    "_id": "58b31862c0ed769de4c8846a"
-  },
-  {
-    "image": "../assets/images/cats9.jpg",
-    "age": 1,
-    "price": 862,
-    "color": "white black red",
-    "name": "Kline",
-    "_id": "58b31862b4a6f72b8bc34ed9"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 7,
-    "price": 2840,
-    "color": "white",
-    "name": "Buckley",
-    "_id": "58b318621b06beb8b9dc49eb"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 5,
-    "price": 47216,
-    "color": "white",
-    "name": "Garcia",
-    "_id": "58b31862571a53b9ae4b1e41"
-  },
-  {
-    "image": "../assets/images/cats1.jpg",
-    "age": 11,
-    "price": 32244,
-    "color": "white",
-    "name": "Kane",
-    "_id": "58b318621e5c6557f276b7e9"
-  },
-  {
-    "image": "../assets/images/cats7.jpg",
-    "age": 5,
-    "price": 38218,
-    "color": "black",
-    "name": "Lancaster",
-    "_id": "58b3186283a4818f94357d95"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 4,
-    "price": 19910,
-    "color": "black",
-    "name": "Pearlie",
-    "_id": "58b31862062bef26f1212ef4"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 3,
-    "price": 35561,
-    "color": "black",
-    "name": "Theresa",
-    "_id": "58b3186250c1686ff017cad3"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 12,
-    "price": 11714,
-    "color": "gray",
+    "price": 46588,
+    "color": [
+      "black"
+    ],
     "name": "Carlson",
-    "_id": "58b318623f2d9b8009b9ed44"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 12,
-    "price": 35060,
-    "color": "white",
-    "name": "Beverly",
-    "_id": "58b31862e5d7f62d8ef98e2c"
-  },
-  {
-    "image": "../assets/images/cats7.jpg",
-    "age": 2,
-    "price": 3519,
-    "color": "white black",
-    "name": "Madden",
-    "_id": "58b31862db8f00c026dbe0d3"
-  },
-  {
-    "image": "../assets/images/cats7.jpg",
-    "age": 11,
-    "price": 49287,
-    "color": "red",
-    "name": "Mckenzie",
-    "_id": "58b3186232c2fd138db05275"
-  },
-  {
-    "image": "../assets/images/cats2.jpg",
-    "age": 6,
-    "price": 7660,
-    "color": "white",
-    "name": "Sampson",
-    "_id": "58b318625a6c7f7e58a4c32a"
-  },
-  {
-    "image": "../assets/images/cats2.jpg",
-    "age": 1,
-    "price": 13459,
-    "color": "gray",
-    "name": "Whitney",
-    "_id": "58b31862a6e12370a2f5baac"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 12,
-    "price": 8718,
-    "color": "white black red",
-    "name": "Blevins",
-    "_id": "58b318626f91d6f12ad00b2a"
-  },
-  {
-    "image": "../assets/images/cats2.jpg",
-    "age": 6,
-    "price": 8681,
-    "color": "black",
-    "name": "Hilda",
-    "_id": "58b31862d967394ad688c27d"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 11,
-    "price": 4338,
-    "color": "white black",
-    "name": "Paulette",
-    "_id": "58b3186219fe9738578cc7d9"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 8,
-    "price": 37437,
-    "color": "white black",
-    "name": "Donna",
-    "_id": "58b31862253cdd7c250e8bba"
-  },
-  {
-    "image": "../assets/images/cats1.jpg",
-    "age": 5,
-    "price": 5628,
-    "color": "red",
-    "name": "Amanda",
-    "_id": "58b3186257cb0d6c564dccbc"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 3,
-    "price": 2394,
-    "color": "red",
-    "name": "Carolina",
-    "_id": "58b31862b42c4b9a9f38b0d5"
-  },
-  {
-    "image": "../assets/images/cats6.jpg",
-    "age": 10,
-    "price": 1044,
-    "color": "white",
-    "name": "Bobbie",
-    "_id": "58b3186270d476bb6a2b6132"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 7,
-    "price": 19100,
-    "color": "white",
-    "name": "Bass",
-    "_id": "58b31862bc48f72c515d0ba6"
+    "id": "58b34328fb7c2212a710c993"
   },
   {
     "image": "../assets/images/cats4.jpg",
-    "age": 5,
-    "price": 47585,
-    "color": "gray",
-    "name": "Lilia",
-    "_id": "58b31862b3debf97869145e1"
-  },
-  {
-    "image": "../assets/images/cats6.jpg",
-    "age": 12,
-    "price": 49804,
-    "color": "black",
-    "name": "Singleton",
-    "_id": "58b3186223056b53b4588cd3"
-  },
-  {
-    "image": "../assets/images/cats6.jpg",
-    "age": 9,
-    "price": 24575,
-    "color": "black",
-    "name": "Moran",
-    "_id": "58b3186211f0d61d8c08a70c"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 12,
-    "price": 7653,
-    "color": "white",
-    "name": "Stephanie",
-    "_id": "58b31862a37e15165bb80748"
-  },
-  {
-    "image": "../assets/images/cats1.jpg",
-    "age": 1,
-    "price": 5616,
-    "color": "white black",
-    "name": "Brown",
-    "_id": "58b31862a5e02817383e0314"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 7,
-    "price": 30572,
-    "color": "white",
-    "name": "Marla",
-    "_id": "58b3186216aa676c5d926ce5"
-  },
-  {
-    "image": "../assets/images/cats6.jpg",
-    "age": 2,
-    "price": 49982,
-    "color": "red",
-    "name": "Kristi",
-    "_id": "58b31862576387b5f626e990"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 2,
-    "price": 20751,
-    "color": "red",
-    "name": "Delaney",
-    "_id": "58b31862809b94cef18060c2"
-  },
-  {
-    "image": "../assets/images/cats7.jpg",
-    "age": 6,
-    "price": 19692,
-    "color": "gray",
-    "name": "Sexton",
-    "_id": "58b31862987213ba8969fdea"
-  },
-  {
-    "image": "../assets/images/cats6.jpg",
     "age": 4,
-    "price": 19716,
-    "color": "white black",
-    "name": "Teri",
-    "_id": "58b31862102a1f64dfaaf14d"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 1,
-    "price": 26067,
-    "color": "white",
-    "name": "Silvia",
-    "_id": "58b318620a5f674915af6854"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 9,
-    "price": 21523,
-    "color": "white",
-    "name": "Farmer",
-    "_id": "58b3186210901150cec43031"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 1,
-    "price": 3448,
-    "color": "white",
-    "name": "Velma",
-    "_id": "58b31862625217cac13fd8c6"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 9,
-    "price": 16088,
-    "color": "white black red",
-    "name": "Renee",
-    "_id": "58b3186204c060b2b0ce703e"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 7,
-    "price": 43721,
-    "color": "white",
-    "name": "Noel",
-    "_id": "58b318627228725002c47051"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 10,
-    "price": 1079,
-    "color": "white black",
-    "name": "Molina",
-    "_id": "58b31862482d8b292affa18d"
+    "price": 15739,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Blanchard",
+    "id": "58b343284a84f362ff172f94"
   },
   {
     "image": "../assets/images/cats9.jpg",
-    "age": 2,
-    "price": 8595,
-    "color": "white black red",
-    "name": "Kenya",
-    "_id": "58b31862de4f768a837e4f0d"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 6,
-    "price": 43111,
-    "color": "white black",
-    "name": "Gena",
-    "_id": "58b31862caf9b6e374111562"
+    "age": 10,
+    "price": 26878,
+    "color": [
+      "black"
+    ],
+    "name": "Francisca",
+    "id": "58b34328552912495b384960"
   },
   {
     "image": "../assets/images/cats2.jpg",
-    "age": 2,
-    "price": 7145,
-    "color": "red",
-    "name": "Montoya",
-    "_id": "58b318627f7a784c6e63c854"
+    "age": 11,
+    "price": 30100,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Kline",
+    "id": "58b34328a533cbd3a2c12a17"
+  },
+  {
+    "image": "../assets/images/cats1.jpg",
+    "age": 6,
+    "price": 10055,
+    "color": [
+      "red"
+    ],
+    "name": "Clarice",
+    "id": "58b3432872fb8e621d47d470"
+  },
+  {
+    "image": "../assets/images/cats9.jpg",
+    "age": 8,
+    "price": 31984,
+    "color": [
+      "red"
+    ],
+    "name": "Sybil",
+    "id": "58b34328ad56e75a9b7dba36"
   },
   {
     "image": "../assets/images/cats3.jpg",
-    "age": 3,
-    "price": 18304,
-    "color": "red",
-    "name": "Clements",
-    "_id": "58b318620aa4cd564e43590c"
+    "age": 7,
+    "price": 5161,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Gabriela",
+    "id": "58b343287625e507e209e7bb"
   },
   {
-    "image": "../assets/images/cats7.jpg",
+    "image": "../assets/images/cats5.jpg",
+    "age": 7,
+    "price": 37126,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Lizzie",
+    "id": "58b3432879e040826b243353"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
     "age": 1,
-    "price": 29022,
-    "color": "white black",
-    "name": "Bush",
-    "_id": "58b31862b565dd15a3778d21"
+    "price": 25805,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Lillian",
+    "id": "58b34328853e6586858b1a84"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 11,
+    "price": 48463,
+    "color": [
+      "gray"
+    ],
+    "name": "Nita",
+    "id": "58b34328f1a19367c2235340"
+  },
+  {
+    "image": "../assets/images/cats9.jpg",
+    "age": 5,
+    "price": 44745,
+    "color": [
+      "gray"
+    ],
+    "name": "Schmidt",
+    "id": "58b343285d3736ab3202ee10"
+  },
+  {
+    "image": "../assets/images/cats5.jpg",
+    "age": 6,
+    "price": 17458,
+    "color": [
+      "red"
+    ],
+    "name": "Dillard",
+    "id": "58b34328cc1a63885f7540c6"
+  },
+  {
+    "image": "../assets/images/cats4.jpg",
+    "age": 11,
+    "price": 40516,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Lavonne",
+    "id": "58b3432809eee996d921bbde"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
+    "age": 2,
+    "price": 47844,
+    "color": [
+      "white"
+    ],
+    "name": "Pickett",
+    "id": "58b3432879f2b98554355afa"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
+    "age": 8,
+    "price": 35775,
+    "color": [
+      "black"
+    ],
+    "name": "Lauren",
+    "id": "58b343283b5d547535383bf6"
+  },
+  {
+    "image": "../assets/images/cats2.jpg",
+    "age": 1,
+    "price": 35386,
+    "color": [
+      "gray"
+    ],
+    "name": "Pena",
+    "id": "58b34328a0fe48aeb6c1ad77"
   },
   {
     "image": "../assets/images/cats7.jpg",
-    "age": 4,
-    "price": 24290,
-    "color": "gray",
-    "name": "Marina",
-    "_id": "58b318626ea850d0c867282b"
+    "age": 3,
+    "price": 41830,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Velasquez",
+    "id": "58b34328c3ba32283e8fa447"
   },
   {
-    "image": "../assets/images/cats8.jpg",
-    "age": 2,
-    "price": 17062,
-    "color": "gray",
-    "name": "Tyler",
-    "_id": "58b31862347f15177b5c9c54"
+    "image": "../assets/images/cats4.jpg",
+    "age": 9,
+    "price": 18769,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Moses",
+    "id": "58b34328c5181dd9a64fe6ce"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 8,
+    "price": 14723,
+    "color": [
+      "red"
+    ],
+    "name": "Hogan",
+    "id": "58b343281382b46a043c113f"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 7,
+    "price": 6836,
+    "color": [
+      "gray"
+    ],
+    "name": "Sophia",
+    "id": "58b343294eef5656f1a2ed87"
+  },
+  {
+    "image": "../assets/images/cats2.jpg",
+    "age": 6,
+    "price": 5377,
+    "color": [
+      "black"
+    ],
+    "name": "Moreno",
+    "id": "58b3432971dfc87d3f97078f"
+  },
+  {
+    "image": "../assets/images/cats2.jpg",
+    "age": 4,
+    "price": 17643,
+    "color": [
+      "black"
+    ],
+    "name": "Knox",
+    "id": "58b34329a08a6ded3915f1b9"
   },
   {
     "image": "../assets/images/cats1.jpg",
     "age": 12,
-    "price": 21236,
-    "color": "gray",
+    "price": 21484,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Morrison",
+    "id": "58b34329ce114790e1755f98"
+  },
+  {
+    "image": "../assets/images/cats5.jpg",
+    "age": 8,
+    "price": 18038,
+    "color": [
+      "red"
+    ],
+    "name": "Lorraine",
+    "id": "58b34329825d84814828dc1a"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 8,
+    "price": 27404,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Perez",
+    "id": "58b34329c5128177136b6783"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 2,
+    "price": 33728,
+    "color": [
+      "red"
+    ],
+    "name": "Sweet",
+    "id": "58b34329b54a58cde5a69054"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 7,
+    "price": 38688,
+    "color": [
+      "white"
+    ],
+    "name": "Herrera",
+    "id": "58b3432992e848c932cfd9f2"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 6,
+    "price": 6772,
+    "color": [
+      "red"
+    ],
+    "name": "Glenda",
+    "id": "58b3432929705777f6723229"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
+    "age": 10,
+    "price": 45723,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Houston",
+    "id": "58b343297e3b9ed4995a1787"
+  },
+  {
+    "image": "../assets/images/cats1.jpg",
+    "age": 9,
+    "price": 8081,
+    "color": [
+      "gray"
+    ],
+    "name": "Mariana",
+    "id": "58b34329b3b11163ea6bbc7c"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 6,
+    "price": 35373,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Mildred",
+    "id": "58b34329703e44907fbebc10"
+  },
+  {
+    "image": "../assets/images/cats7.jpg",
+    "age": 10,
+    "price": 25539,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Michele",
+    "id": "58b34329c887385765d62fa9"
+  },
+  {
+    "image": "../assets/images/cats2.jpg",
+    "age": 8,
+    "price": 8616,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Peters",
+    "id": "58b343290d79bebe78652e0f"
+  },
+  {
+    "image": "../assets/images/cats7.jpg",
+    "age": 4,
+    "price": 4287,
+    "color": [
+      "gray"
+    ],
+    "name": "Patty",
+    "id": "58b343292b4da86480344cbf"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
+    "age": 12,
+    "price": 16018,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Cummings",
+    "id": "58b34329f11dc23acb9d8e04"
+  },
+  {
+    "image": "../assets/images/cats7.jpg",
+    "age": 1,
+    "price": 20038,
+    "color": [
+      "white"
+    ],
+    "name": "Berta",
+    "id": "58b343290756bc91cc78a0b4"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 2,
+    "price": 8797,
+    "color": [
+      "gray"
+    ],
+    "name": "Patricia",
+    "id": "58b34329cc2e2ecff099ce42"
+  },
+  {
+    "image": "../assets/images/cats9.jpg",
+    "age": 4,
+    "price": 15969,
+    "color": [
+      "gray"
+    ],
+    "name": "Brandi",
+    "id": "58b34329537fae89a2892edd"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 9,
+    "price": 15017,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
     "name": "Keisha",
-    "_id": "58b31862bd061de4b70abd1d"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 10,
-    "price": 47624,
-    "color": "white",
-    "name": "Jacquelyn",
-    "_id": "58b318622486b4a013897051"
+    "id": "58b34329a2726f58876f229f"
   },
   {
     "image": "../assets/images/cats2.jpg",
+    "age": 8,
+    "price": 18969,
+    "color": [
+      "red"
+    ],
+    "name": "Robyn",
+    "id": "58b343297ecdd89a1abd09a9"
+  },
+  {
+    "image": "../assets/images/cats1.jpg",
+    "age": 4,
+    "price": 10885,
+    "color": [
+      "white"
+    ],
+    "name": "Bernard",
+    "id": "58b34329ded6f9834302a5a2"
+  },
+  {
+    "image": "../assets/images/cats2.jpg",
+    "age": 4,
+    "price": 37762,
+    "color": [
+      "red"
+    ],
+    "name": "Meagan",
+    "id": "58b343292e3d65f1539a6d5b"
+  },
+  {
+    "image": "../assets/images/cats1.jpg",
     "age": 5,
-    "price": 22341,
-    "color": "white black",
-    "name": "Oliver",
-    "_id": "58b31862ff787e10a6fa902a"
-  },
-  {
-    "image": "../assets/images/cats5.jpg",
-    "age": 9,
-    "price": 30832,
-    "color": "gray",
-    "name": "Lynn",
-    "_id": "58b3186242001964c288890e"
-  },
-  {
-    "image": "../assets/images/cats5.jpg",
-    "age": 2,
-    "price": 22618,
-    "color": "white black",
-    "name": "Beatriz",
-    "_id": "58b318622a5cffdb05e0dc2b"
+    "price": 30482,
+    "color": [
+      "white"
+    ],
+    "name": "Vicky",
+    "id": "58b3432922297e9e1bfd7cf4"
   },
   {
     "image": "../assets/images/cats8.jpg",
-    "age": 5,
-    "price": 14897,
-    "color": "white",
-    "name": "Keller",
-    "_id": "58b318620b198698259f0044"
+    "age": 1,
+    "price": 13000,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Barton",
+    "id": "58b3432925a152c743a67bd0"
   },
   {
     "image": "../assets/images/cats9.jpg",
-    "age": 1,
-    "price": 2628,
-    "color": "red",
-    "name": "Alford",
-    "_id": "58b31862948340696373bfcb"
-  },
-  {
-    "image": "../assets/images/cats6.jpg",
-    "age": 9,
-    "price": 14741,
-    "color": "white black",
-    "name": "Chelsea",
-    "_id": "58b318620d8a93ba9c425c5f"
+    "age": 2,
+    "price": 27927,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Catalina",
+    "id": "58b34329fc81e0321125beb6"
   },
   {
     "image": "../assets/images/cats4.jpg",
+    "age": 2,
+    "price": 17638,
+    "color": [
+      "white"
+    ],
+    "name": "Minerva",
+    "id": "58b34329013b6ff7e0d44fdb"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 8,
+    "price": 31503,
+    "color": [
+      "red"
+    ],
+    "name": "Harper",
+    "id": "58b343294fb4d1b4fa9f065e"
+  },
+  {
+    "image": "../assets/images/cats1.jpg",
+    "age": 1,
+    "price": 20641,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Chasity",
+    "id": "58b343290298d3ae10f1c858"
+  },
+  {
+    "image": "../assets/images/cats5.jpg",
+    "age": 5,
+    "price": 21745,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Robbie",
+    "id": "58b34329c6aa6e23ec59281e"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 4,
+    "price": 41618,
+    "color": [
+      "red"
+    ],
+    "name": "Loretta",
+    "id": "58b3432968ca81479df69288"
+  },
+  {
+    "image": "../assets/images/cats2.jpg",
+    "age": 1,
+    "price": 49479,
+    "color": [
+      "white"
+    ],
+    "name": "Rush",
+    "id": "58b3432951736b4ad9161a8f"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
+    "age": 8,
+    "price": 10233,
+    "color": [
+      "gray"
+    ],
+    "name": "Amelia",
+    "id": "58b34329d5dd946dba039ffb"
+  },
+  {
+    "image": "../assets/images/cats9.jpg",
+    "age": 2,
+    "price": 35246,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Graciela",
+    "id": "58b34329856ffd0844f858e5"
+  },
+  {
+    "image": "../assets/images/cats7.jpg",
+    "age": 5,
+    "price": 40239,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Trevino",
+    "id": "58b34329c2d5ab0c222d5b75"
+  },
+  {
+    "image": "../assets/images/cats4.jpg",
+    "age": 5,
+    "price": 41156,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Allyson",
+    "id": "58b3432976402ce28a62aef6"
+  },
+  {
+    "image": "../assets/images/cats7.jpg",
+    "age": 4,
+    "price": 42655,
+    "color": [
+      "red"
+    ],
+    "name": "Lang",
+    "id": "58b34329f63483e9bde26d7c"
+  },
+  {
+    "image": "../assets/images/cats4.jpg",
+    "age": 7,
+    "price": 34419,
+    "color": [
+      "red"
+    ],
+    "name": "Miranda",
+    "id": "58b343298e54c6bef67e24b6"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 4,
+    "price": 31434,
+    "color": [
+      "red"
+    ],
+    "name": "Meadows",
+    "id": "58b3432943d68ee3ee78cb71"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
     "age": 9,
-    "price": 14802,
-    "color": "black",
-    "name": "Taylor",
-    "_id": "58b3186298ed710b43f624e4"
+    "price": 38020,
+    "color": [
+      "white"
+    ],
+    "name": "Fowler",
+    "id": "58b343297d522ad756e50fc2"
+  },
+  {
+    "image": "../assets/images/cats3.jpg",
+    "age": 5,
+    "price": 49750,
+    "color": [
+      "red"
+    ],
+    "name": "Hurley",
+    "id": "58b343291cb24702d1434574"
   },
   {
     "image": "../assets/images/cats1.jpg",
     "age": 11,
-    "price": 31362,
-    "color": "black",
-    "name": "Justine",
-    "_id": "58b31862ee7b2122c8e67ee1"
+    "price": 29115,
+    "color": [
+      "white"
+    ],
+    "name": "Rosalinda",
+    "id": "58b3432910bd79453e8f8485"
+  },
+  {
+    "image": "../assets/images/cats1.jpg",
+    "age": 4,
+    "price": 2520,
+    "color": [
+      "black"
+    ],
+    "name": "Combs",
+    "id": "58b34329b5a257fad50af74c"
+  },
+  {
+    "image": "../assets/images/cats4.jpg",
+    "age": 11,
+    "price": 37409,
+    "color": [
+      "gray"
+    ],
+    "name": "Workman",
+    "id": "58b343292b372e5724db21d2"
   },
   {
     "image": "../assets/images/cats7.jpg",
-    "age": 7,
-    "price": 25321,
-    "color": "white",
-    "name": "Bolton",
-    "_id": "58b318627e2bc9fa87efc393"
-  },
-  {
-    "image": "../assets/images/cats9.jpg",
-    "age": 12,
-    "price": 23284,
-    "color": "white",
-    "name": "Julia",
-    "_id": "58b318625466f68f5f46f384"
+    "age": 1,
+    "price": 23844,
+    "color": [
+      "black"
+    ],
+    "name": "Harmon",
+    "id": "58b343296964a26127cb4363"
   },
   {
     "image": "../assets/images/cats8.jpg",
-    "age": 4,
-    "price": 40099,
-    "color": "gray",
-    "name": "Ratliff",
-    "_id": "58b3186208a848b12b0dce24"
+    "age": 8,
+    "price": 33631,
+    "color": [
+      "white"
+    ],
+    "name": "Sargent",
+    "id": "58b34329478672ea21de1fa9"
   },
   {
-    "image": "../assets/images/cats3.jpg",
+    "image": "../assets/images/cats2.jpg",
+    "age": 1,
+    "price": 4235,
+    "color": [
+      "white"
+    ],
+    "name": "Foley",
+    "id": "58b34329de848198c476844a"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 6,
+    "price": 21642,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Shelton",
+    "id": "58b3432968257105644fe961"
+  },
+  {
+    "image": "../assets/images/cats2.jpg",
+    "age": 12,
+    "price": 21045,
+    "color": [
+      "gray"
+    ],
+    "name": "Lydia",
+    "id": "58b343297ed8c00d67db1251"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
     "age": 3,
-    "price": 40520,
-    "color": "red",
-    "name": "Brittney",
-    "_id": "58b318627c87a20bac8a174b"
+    "price": 31858,
+    "color": [
+      "white"
+    ],
+    "name": "Monique",
+    "id": "58b343291644ee78b96980a0"
+  },
+  {
+    "image": "../assets/images/cats7.jpg",
+    "age": 9,
+    "price": 11091,
+    "color": [
+      "black"
+    ],
+    "name": "Noble",
+    "id": "58b343293d49a11075c92a55"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 3,
+    "price": 20538,
+    "color": [
+      "white"
+    ],
+    "name": "Arnold",
+    "id": "58b34329ea2925b65421903c"
+  },
+  {
+    "image": "../assets/images/cats4.jpg",
+    "age": 1,
+    "price": 6206,
+    "color": [
+      "black"
+    ],
+    "name": "Foster",
+    "id": "58b3432935523253628b8d88"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
+    "age": 11,
+    "price": 1366,
+    "color": [
+      "black"
+    ],
+    "name": "Cline",
+    "id": "58b34329f4a4c0cccaf53efb"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
+    "age": 3,
+    "price": 18296,
+    "color": [
+      "red"
+    ],
+    "name": "Kathy",
+    "id": "58b3432935a3572789e5d973"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 6,
+    "price": 1532,
+    "color": [
+      "white"
+    ],
+    "name": "Maldonado",
+    "id": "58b343293f0fe2f09a39567a"
   },
   {
     "image": "../assets/images/cats2.jpg",
-    "age": 10,
-    "price": 45158,
-    "color": "gray",
-    "name": "Tammi",
-    "_id": "58b31862623a56bfa3cccbef"
+    "age": 4,
+    "price": 6723,
+    "color": [
+      "gray"
+    ],
+    "name": "Medina",
+    "id": "58b34329c200a5db12f52b8a"
   },
   {
-    "image": "../assets/images/cats2.jpg",
-    "age": 10,
-    "price": 8614,
-    "color": "white",
+    "image": "../assets/images/cats9.jpg",
+    "age": 1,
+    "price": 2274,
+    "color": [
+      "white"
+    ],
+    "name": "Hendrix",
+    "id": "58b34329d91f36ddbfd2371d"
+  },
+  {
+    "image": "../assets/images/cats4.jpg",
+    "age": 1,
+    "price": 45320,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Greer",
+    "id": "58b3432929b1ddd5473a7dfe"
+  },
+  {
+    "image": "../assets/images/cats4.jpg",
+    "age": 12,
+    "price": 1358,
+    "color": [
+      "gray"
+    ],
+    "name": "Paula",
+    "id": "58b34329ed76e671a9c2964e"
+  },
+  {
+    "image": "../assets/images/cats9.jpg",
+    "age": 8,
+    "price": 3386,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Holt",
+    "id": "58b3432921432091260f804a"
+  },
+  {
+    "image": "../assets/images/cats6.jpg",
+    "age": 4,
+    "price": 43769,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Nicholson",
+    "id": "58b34329bb0fb4980e8ad007"
+  },
+  {
+    "image": "../assets/images/cats5.jpg",
+    "age": 5,
+    "price": 9098,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
     "name": "Carmela",
-    "_id": "58b31862dd183af4c6fb68e8"
+    "id": "58b34329d2c6de8e22fb15c4"
+  },
+  {
+    "image": "../assets/images/cats5.jpg",
+    "age": 8,
+    "price": 48192,
+    "color": [
+      "gray"
+    ],
+    "name": "Rojas",
+    "id": "58b34329b7d6414d1765d57a"
   },
   {
     "image": "../assets/images/cats3.jpg",
-    "age": 6,
-    "price": 3006,
-    "color": "black",
-    "name": "Goodman",
-    "_id": "58b3186245e0be1d1e108cea"
-  },
-  {
-    "image": "../assets/images/cats9.jpg",
-    "age": 12,
-    "price": 20531,
-    "color": "white black red",
-    "name": "Davis",
-    "_id": "58b318629703b2cb24cebcd3"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 12,
-    "price": 33050,
-    "color": "black",
-    "name": "Mcdowell",
-    "_id": "58b31862ced77d87bf2533f3"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 12,
-    "price": 40603,
-    "color": "white black",
-    "name": "Olsen",
-    "_id": "58b31862e88d697c663c0c1b"
-  },
-  {
-    "image": "../assets/images/cats7.jpg",
-    "age": 6,
-    "price": 38276,
-    "color": "gray",
-    "name": "Sharlene",
-    "_id": "58b31862d295ffc4cb5a7cf7"
-  },
-  {
-    "image": "../assets/images/cats6.jpg",
-    "age": 7,
-    "price": 30616,
-    "color": "red",
-    "name": "Pierce",
-    "_id": "58b31862dc84b596bdb3d0e7"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 1,
-    "price": 49410,
-    "color": "red",
-    "name": "Vickie",
-    "_id": "58b31862da05b6543973ca02"
+    "age": 11,
+    "price": 41931,
+    "color": [
+      "red"
+    ],
+    "name": "Oconnor",
+    "id": "58b343295a8fb078b772f930"
   },
   {
     "image": "../assets/images/cats8.jpg",
     "age": 11,
-    "price": 9133,
-    "color": "white black",
-    "name": "Miriam",
-    "_id": "58b31862e48d283e65cda8f2"
+    "price": 46565,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Shelley",
+    "id": "58b34329356535c13d4074d1"
+  },
+  {
+    "image": "../assets/images/cats1.jpg",
+    "age": 8,
+    "price": 24766,
+    "color": [
+      "black"
+    ],
+    "name": "Kelley",
+    "id": "58b34329f607fa3d58a456b6"
   },
   {
     "image": "../assets/images/cats2.jpg",
-    "age": 2,
-    "price": 35877,
-    "color": "white",
-    "name": "Brooke",
-    "_id": "58b318627d1bb4cfc9344153"
+    "age": 6,
+    "price": 17518,
+    "color": [
+      "gray"
+    ],
+    "name": "Edith",
+    "id": "58b3432958bb4e2e1ca7d8d1"
   },
   {
-    "image": "../assets/images/cats8.jpg",
-    "age": 9,
-    "price": 2090,
-    "color": "red",
-    "name": "Woods",
-    "_id": "58b31862e6536d98bce0675e"
-  },
-  {
-    "image": "../assets/images/cats7.jpg",
-    "age": 11,
-    "price": 45637,
-    "color": "gray",
-    "name": "Chen",
-    "_id": "58b3186257749c973fa157ec"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 10,
-    "price": 2661,
-    "color": "gray",
+    "image": "../assets/images/cats4.jpg",
+    "age": 7,
+    "price": 40963,
+    "color": [
+      "white",
+      "black"
+    ],
     "name": "Elena",
-    "_id": "58b3186230910e793539e74c"
+    "id": "58b3432966236a7e87a4210c"
   },
   {
-    "image": "../assets/images/cats7.jpg",
-    "age": 9,
-    "price": 41539,
-    "color": "white black red",
-    "name": "Tammy",
-    "_id": "58b31862d6ad2a321520f3e0"
-  },
-  {
-    "image": "../assets/images/cats7.jpg",
-    "age": 8,
-    "price": 8157,
-    "color": "black",
-    "name": "Rocha",
-    "_id": "58b318622d993ca35c4b80db"
-  },
-  {
-    "image": "../assets/images/cats7.jpg",
+    "image": "../assets/images/cats6.jpg",
     "age": 3,
-    "price": 38906,
-    "color": "white black red",
-    "name": "Sonja",
-    "_id": "58b318622af75167e88935d5"
-  },
-  {
-    "image": "../assets/images/cats5.jpg",
-    "age": 8,
-    "price": 22095,
-    "color": "white black",
-    "name": "Murphy",
-    "_id": "58b31862d7dd65a9fded9246"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 2,
-    "price": 17406,
-    "color": "gray",
-    "name": "Duke",
-    "_id": "58b318620217c69854961ba1"
-  },
-  {
-    "image": "../assets/images/cats9.jpg",
-    "age": 5,
-    "price": 24834,
-    "color": "gray",
-    "name": "Flora",
-    "_id": "58b31862efa7f637a4eef304"
-  },
-  {
-    "image": "../assets/images/cats2.jpg",
-    "age": 12,
-    "price": 34678,
-    "color": "gray",
-    "name": "Cassie",
-    "_id": "58b31862e6c72512a911b23c"
+    "price": 25303,
+    "color": [
+      "black"
+    ],
+    "name": "Reese",
+    "id": "58b34329468b8327ab59b8a6"
   },
   {
     "image": "../assets/images/cats3.jpg",
-    "age": 9,
-    "price": 36373,
-    "color": "red",
-    "name": "Hope",
-    "_id": "58b3186267ae2046bb16da8a"
-  },
-  {
-    "image": "../assets/images/cats2.jpg",
     "age": 4,
-    "price": 29659,
-    "color": "gray",
-    "name": "Wilma",
-    "_id": "58b3186250987caec242d388"
-  },
-  {
-    "image": "../assets/images/cats9.jpg",
-    "age": 7,
-    "price": 35267,
-    "color": "white",
-    "name": "Hollie",
-    "_id": "58b3186256ad69208136014d"
+    "price": 46487,
+    "color": [
+      "gray"
+    ],
+    "name": "Park",
+    "id": "58b34329e2872540ad51519c"
   },
   {
     "image": "../assets/images/cats5.jpg",
-    "age": 6,
-    "price": 45165,
-    "color": "white",
-    "name": "Ava",
-    "_id": "58b31862123fa4f975d2c879"
+    "age": 2,
+    "price": 33995,
+    "color": [
+      "white",
+      "black",
+      "red"
+    ],
+    "name": "Marylou",
+    "id": "58b34329a1ee910e0798593b"
   },
   {
-    "image": "../assets/images/cats9.jpg",
+    "image": "../assets/images/cats6.jpg",
+    "age": 2,
+    "price": 19951,
+    "color": [
+      "white",
+      "black"
+    ],
+    "name": "Myers",
+    "id": "58b34329f13ed9a7be19f520"
+  },
+  {
+    "image": "../assets/images/cats5.jpg",
     "age": 9,
-    "price": 30749,
-    "color": "black",
-    "name": "Dolly",
-    "_id": "58b318621c74785ae63a3ec5"
+    "price": 20755,
+    "color": [
+      "gray"
+    ],
+    "name": "Tiffany",
+    "id": "58b34329b2ee599cf5797828"
+  },
+  {
+    "image": "../assets/images/cats8.jpg",
+    "age": 4,
+    "price": 33441,
+    "color": [
+      "black"
+    ],
+    "name": "Chandra",
+    "id": "58b343296783069acb2fbeb7"
   },
   {
     "image": "../assets/images/cats6.jpg",
     "age": 7,
-    "price": 11008,
-    "color": "red",
-    "name": "Fitzpatrick",
-    "_id": "58b31862405b231733c01fc3"
+    "price": 41250,
+    "color": [
+      "gray"
+    ],
+    "name": "Sampson",
+    "id": "58b3432931225edc2a596aaa"
   },
   {
-    "image": "../assets/images/cats4.jpg",
-    "age": 12,
-    "price": 30652,
-    "color": "black",
-    "name": "Joanne",
-    "_id": "58b3186248da5febf05c919a"
-  },
-  {
-    "image": "../assets/images/cats2.jpg",
-    "age": 4,
-    "price": 42677,
-    "color": "white",
-    "name": "Cross",
-    "_id": "58b318624728061aa9c900ad"
+    "image": "../assets/images/cats3.jpg",
+    "age": 2,
+    "price": 17649,
+    "color": [
+      "red"
+    ],
+    "name": "Staci",
+    "id": "58b343290b288d53d70faf19"
   },
   {
     "image": "../assets/images/cats1.jpg",
     "age": 7,
-    "price": 28712,
-    "color": "white black",
-    "name": "Jennie",
-    "_id": "58b31862c05e9998c592c8c2"
+    "price": 28612,
+    "color": [
+      "white"
+    ],
+    "name": "Harrell",
+    "id": "58b34329bfc7296cd5314ad5"
   },
   {
-    "image": "../assets/images/cats4.jpg",
-    "age": 11,
-    "price": 6626,
-    "color": "gray",
-    "name": "Mcleod",
-    "_id": "58b31862a167349e0bfe7bac"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 12,
-    "price": 8751,
-    "color": "white black red",
-    "name": "Pauline",
-    "_id": "58b318622eb6958e38a3fbf3"
-  },
-  {
-    "image": "../assets/images/cats8.jpg",
-    "age": 10,
-    "price": 29291,
-    "color": "white black",
-    "name": "Nguyen",
-    "_id": "58b31862abe9fc92874fc4e7"
-  },
-  {
-    "image": "../assets/images/cats2.jpg",
-    "age": 8,
-    "price": 8537,
-    "color": "white black",
-    "name": "Margery",
-    "_id": "58b3186267e56fea2cb619f2"
-  },
-  {
-    "image": "../assets/images/cats4.jpg",
-    "age": 10,
-    "price": 20982,
-    "color": "gray",
-    "name": "Larsen",
-    "_id": "58b318620d99be9a5dd35cc1"
-  },
-  {
-    "image": "../assets/images/cats6.jpg",
-    "age": 9,
-    "price": 11924,
-    "color": "black",
-    "name": "Sharon",
-    "_id": "58b318622d5658873f784556"
-  },
-  {
-    "image": "../assets/images/cats1.jpg",
-    "age": 2,
-    "price": 14931,
-    "color": "white black",
-    "name": "Petra",
-    "_id": "58b31862797010ee0df174a4"
-  },
-  {
-    "image": "../assets/images/cats3.jpg",
-    "age": 6,
-    "price": 27111,
-    "color": "black",
-    "name": "Doris",
-    "_id": "58b318628cf8b931edeb7253"
-  },
-  {
-    "image": "../assets/images/cats2.jpg",
-    "age": 12,
-    "price": 515,
-    "color": "white",
-    "name": "Garza",
-    "_id": "58b31862f6b26f4bf6a79836"
+    "image": "../assets/images/cats5.jpg",
+    "age": 1,
+    "price": 42775,
+    "color": [
+      "red"
+    ],
+    "name": "Frost",
+    "id": "58b343294698b7da67cb9af3"
   }
 ]
