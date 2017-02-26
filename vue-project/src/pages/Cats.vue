@@ -1,21 +1,25 @@
 <template>
-  <h1>Cats</h1>
+  <section>
+    <filter-panel></filter-panel>
+    <cat-item></cat-item>
+  </section>
 </template>
 
 <script>
+import filterPanel from '../components/filterPanel.vue'
+import catItem from '../components/catItem.vue'
 
 export default {
   name: 'cats',
   data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+    return {}
   },
   methods: {
     
+  },
+  components: {
+    filterPanel,
+    catItem
   }
 }
 </script>
-
-<style lang="scss">
-</style>

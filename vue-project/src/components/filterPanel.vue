@@ -1,0 +1,101 @@
+<template>
+    <div class="col s3">
+        <ul class="collection z-depth-1">
+        <li class="collection-item">
+            <p>Amount range:</p>
+            <div class="row" style="margin-bottom: 0">
+            <div class="input-field col s6">
+                <input placeholder="0" id="amountfrom" type="number">
+                <label for="amountfrom">From</label>
+            </div>
+            <div class="input-field col s6">
+                <input placeholder="50000" id="amountto" type="number">
+                <label for="amountto">To</label>
+            </div>
+            </div>
+        </li>
+        <li class="collection-item">
+            <p>Age:</p>
+            <div class="row" style="margin-bottom: 0">
+            <div class="input-field col s6">
+                <input placeholder="0" id="agefrom" type="number">
+                <label for="agefrom">From</label>
+            </div>
+            <div class="input-field col s6">
+                <input placeholder="20" id="ageto" type="number">
+                <label for="ageto">To</label>
+            </div>
+            </div>
+        </li>
+        <li class="collection-item">
+            <p>Only kittens:</p>
+            <p class="switch">
+            <label>
+                No
+                <input type="checkbox">
+                <span class="lever"></span>
+                Yes
+            </label>
+            </p>
+        </li>
+        <li class="collection-item">
+            <p>Size:</p>
+            <p>
+            <input type="checkbox" class="with-gap" name="group1" id="size1"  />
+            <label for="size1" class="black-text">Small</label>
+            </p>
+            <p>
+            <input type="checkbox" class="with-gap" name="group1" id="size2"  />
+            <label for="size2" class="black-text">Medium</label>
+            </p>
+            <p>
+            <input type="checkbox" class="with-gap" name="group1" id="size3"  />
+            <label for="size3" class="black-text">Large</label>
+            </p>
+        </li>
+        <li class="collection-item">
+            <p>Fur density:</p>
+            <p>
+            <select>
+                <option value="0" selected>Any</option>
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="3">High</option>
+            </select>
+            </p>
+        </li>
+        <li class="collection-item">
+            <p>Fur color:</p>
+            <p>
+            <input type="checkbox" class="with-gap" name="group1" id="color1"  />
+            <label for="color1" class="black-text">Black</label>
+            </p>
+            <p>
+            <input type="checkbox" class="with-gap" name="group1" id="color2"  />
+            <label for="color2" class="black-text">White</label>
+            </p>
+            <p>
+            <input type="checkbox" class="with-gap" name="group1" id="color3"  />
+            <label for="color3" class="black-text">Red</label>
+            </p>
+            <p>
+            <input type="checkbox" class="with-gap" name="group1" id="color4"  />
+            <label for="color4" class="black-text">Gray</label>
+            </p>
+            <p>
+            <input type="checkbox" class="with-gap" name="group1" id="color5"  />
+            <label for="color5" class="black-text">Tabby</label>
+            </p>
+        </li>
+        <li class="collection-item center-align">
+            <button class="btn btn-flat waves-effect" style="width: 100%">Apply filters</button>
+        </li>
+        </ul>
+    </div>
+</template>
+
+<script>
+    export default {    
+        name: 'filterPanel'
+    }
+</script>

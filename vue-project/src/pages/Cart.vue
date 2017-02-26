@@ -1,8 +1,20 @@
 <template>
-  <h1>Cart</h1>
+  <div class="col s10 offset-s1">
+        <ul class="collection">
+          <cart-item></cart-item>
+          <li class="collection-item">
+            <button class="btn orange btn-large waves-effect left">
+              <i class="material-icons left">shopping_basket</i>Checkout
+            </button>
+            <p class="secondary-content orange-text right-align" style="font-size: 1.5em;">$200</p>
+          </li>
+        </ul>
+
+      </div>
 </template>
 
 <script>
+import cartItem from '../components/cartItem.vue'
 
 export default {
   name: 'cats',
@@ -13,7 +25,8 @@ export default {
   },
   methods: {
     
-  }
+  },
+  components: {cartItem}
 }
 </script>
 
