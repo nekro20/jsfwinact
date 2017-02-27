@@ -15,7 +15,7 @@ const getters = {
 const actions = {
   getAllCats ({ commit }) {
     shop.getCats().then(cats => {
-      commit(types.RECEIVE_CATS, { cats })
+      commit(types.RECEIVE_CATS, { cats: cats.body })
     })
   }
 }

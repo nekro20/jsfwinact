@@ -1,8 +1,10 @@
 <template>
   <section>
     <filter-panel></filter-panel>
-    <div class="col s9" v-for="cat in cats">
-      <cat-item :id="cat.id"></cat-item>
+    <div class="col s9">
+      <div class="col s6" v-for="cat in cats">
+        <cat-item :id="cat.id"></cat-item>
+      </div>
     </div>
   </section>
 </template>
