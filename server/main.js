@@ -1,6 +1,2 @@
-import { Meteor } from 'meteor/meteor';
-
-Meteor.startup(() => {
-  // code to run on server at startup
-  1+1;
-});
+import { CartGoods } from '../imports/api/cartGoods.js';
+import { Goods } from '../imports/api/goods.js';
