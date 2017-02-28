@@ -7,7 +7,7 @@
       <div class="card-content" style="position: relative;">
         <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
         <a href="#detail-page" class="card-title">{{currentCat.name}}</span></a>
-        <p>{{currentCat.name}}</p>
+        <p>{{currentCat.age}} years old</p>
         <p>{{currentCat.color.join(', ')}}</p>
       </div>
       <div class="card-action">
@@ -18,8 +18,6 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-
   export default {    
       name: 'catItem',
       computed: {
