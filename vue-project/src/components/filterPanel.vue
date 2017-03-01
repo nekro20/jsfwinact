@@ -38,13 +38,17 @@
             </label>
             </p>
         </li>
-        <li class="collection-item">
-            <checkbox-group title="Size" :checkbox-values="['Small', 'Medium', 'Large']"></checkbox-group>
-        </li>
+            <li class="collection-item">
+                <p>Size:</p>
+                <p v-for="(size, index) in sizes">
+                    <input type="checkbox" class="with-gap" name="group1" :id="'size' + index" :value="size" v-model="filterState.size"/>
+                    <label :for="'size' + index" class="black-text">{{size}}</label>
+                </p>
+            </li>
         <li class="collection-item">
             <p>Fur density:</p>
             <p>
-            <select v-model="selected">
+            <select id="material_select">
                 <option>Any</option>
                 <option>Low</option>
                 <option>Medium</option>
@@ -53,7 +57,11 @@
             </p>
         </li>
         <li class="collection-item">
-            <checkbox-group title="Fur color" :checkbox-values="['Black', 'White', 'Red', 'Gray']"></checkbox-group>
+            <p>Color:</p>
+            <p v-for="(color, index) in colors">
+                <input type="checkbox" class="with-gap" name="group1" :id="'color' + index" :value="color"  v-model="filterState.color"/>
+                <label :for="'color' + index" class="black-text">{{color}}</label>
+            </p>
         </li>
         <li class="collection-item center-align">
             <button class="btn btn-flat waves-effect" style="width: 100%" @click="filterCats">Apply filters</button>
@@ -63,23 +71,29 @@
 </template>
 
 <script>
-    import checkboxGroup from './checkboxGroup.vue'
-    import Vue from 'vue'
+    import { mapMutations } from 'vuex'
+    import { FILTER_CATS } from '../store/mutation-types'
 
     export default {    
         name: 'filterPanel',
         data: function () {
             return {
                 filterState: {
-                    furDensity: 'Any'
+                    size: [],
+                    color: []
                 },
-                selected: null
+                sizes:  ['Low', 'Medium', 'Large'],
+                colors: ['Black', 'White', 'Red', 'Gray']
             }
         },
-        components: {checkboxGroup},
         methods: {
+            ...mapMutations([
+                FILTER_CATS
+            ]),
             filterCats: function() {
-                console.log(this.selected);
+                this.$set(this.filterState, 'furDensity', $("#material_select").val());
+                const filterState = this.filterState;
+                this.FILTER_CATS({ filterState });
             }
         }
     }

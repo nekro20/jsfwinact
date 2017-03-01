@@ -8,7 +8,7 @@
         <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
         <a href="#detail-page" class="card-title">{{currentCat.name}}</span></a>
         <p>{{currentCat.age}} years old</p>
-        <p>{{currentCat.color.join(', ')}}</p>
+        <p>{{currentCat.color}}</p>
       </div>
       <div class="card-action">
         <span class="orange-text">{{currentCat.price}}</span>
