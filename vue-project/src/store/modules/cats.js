@@ -35,8 +35,8 @@ const mutations = {
   [types.FILTER_CATS] (state, { filterState }) {
     let keys = Object.keys(filterState);
     state.cats = state.all.filter( cat => {
-        let matchAge = cat.age >= (filterState.minAge || 0) && cat.age <= (filterState.maxAge || 20);
-        let matchPrice = cat.price >= (filterState.minPrice || 0) && cat.price <= (filterState.maxPrice || 50000);
+        let matchAge = cat.age >= (filterState.ageFrom || 0) && cat.age <= (filterState.ageTo || 20);
+        let matchPrice = cat.price >= (filterState.amountFrom || 0) && cat.price <= (filterState.amountTo || 50000);
         let matchSterile = filterState.sterile ? cat.sterile : true;
         let matchSize = filterState.size.length ? filterState.size.some(matchEntry('size')) : true;
         let matchDensity = filterState.furDensity === 'Any' ? true : cat.furDensity === filterState.furDensity;

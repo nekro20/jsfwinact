@@ -1,7 +1,9 @@
 <template>
   <div class="col s10 offset-s1">
         <ul class="collection">
-          <cart-item></cart-item>
+            <li class="collection-item avatar" v-for="item in cartItems">
+                <cart-item></cart-item>
+            </li>
           <li class="collection-item">
             <button class="btn orange btn-large waves-effect left">
               <i class="material-icons left">shopping_basket</i>Checkout
@@ -23,8 +25,10 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
-  methods: {
-    
+  computed: {
+      cartItems: function() {
+          return this.$store.state.cart.added;
+      }
   },
   components: {cartItem}
 }

@@ -5,11 +5,17 @@
             <p>Amount range:</p>
             <div class="row" style="margin-bottom: 0">
             <div class="input-field col s6">
-                <input placeholder="0" id="amountfrom" type="number" v-model="filterState.amountfrom">
+                <input placeholder="0"
+                       id="amountfrom"
+                       type="number"
+                       v-model.number="filterState.amountFrom">
                 <label for="amountfrom">From</label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="50000" id="amountto" type="number" v-model="filterState.amountto">
+                <input placeholder="50000"
+                       id="amountto"
+                       type="number"
+                       v-model.number="filterState.amountTo">
                 <label for="amountto">To</label>
             </div>
             </div>
@@ -18,11 +24,11 @@
             <p>Age:</p>
             <div class="row" style="margin-bottom: 0">
             <div class="input-field col s6">
-                <input placeholder="0" id="agefrom" type="number" v-model="filterState.agefrom">
+                <input placeholder="0" id="agefrom" type="number" v-model.number="filterState.ageFrom">
                 <label for="agefrom">From</label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="20" id="ageto" type="number" v-model="filterState.ageto">
+                <input placeholder="20" id="ageto" type="number" v-model.number="filterState.ageTo">
                 <label for="ageto">To</label>
             </div>
             </div>
@@ -79,6 +85,11 @@
         data: function () {
             return {
                 filterState: {
+                    amountFrom: null,
+                    amountTo: null,
+                    ageFrom: null,
+                    ageTo: null,
+                    furDensity: 'Any',
                     size: [],
                     color: []
                 },
@@ -91,7 +102,7 @@
                 FILTER_CATS
             ]),
             filterCats: function() {
-                this.$set(this.filterState, 'furDensity', $("#material_select").val());
+                this.filterState.furDensity = $("#material_select").val();
                 const filterState = this.filterState;
                 this.FILTER_CATS({ filterState });
             }

@@ -28,9 +28,6 @@ export default {
   }),
   methods: mapActions([
     'addToCart'
-  ]),
-  created () {
-    this.$store.dispatch('getAllCats')
-  }
+  ])
 }
 </script>
