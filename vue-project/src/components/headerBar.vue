@@ -15,12 +15,14 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex'
+
     export default {    
         name: 'headerBar',
         computed: {
+            ...mapGetters([ 'cartLength' ]),
             cartStatus: function() {
-                const length = this.$store.state.cart.added.length;
-                return length ? length + ' cats in cart' : 'Cart is empty'
+                return this.cartLength ? this.cartLength + ' cats in cart' : 'Cart is empty'
             }
         }
     }
