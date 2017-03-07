@@ -5,8 +5,11 @@
         </div>
         <div class="card-stacked">
             <div class="card-content" style="position: relative;">
-                <a class="btn-floating halfway-fab waves-effect waves-light red" @click="addToCart(currentCat)"><i
-                        class="material-icons">add</i></a>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"
+                   @click="addToCart(currentCat)"
+                   :class="{ disabled: !currentCat.aviable }">
+                    <i class="material-icons">add</i>
+                </a>
                 <router-link :to="'/details/' + currentCat.id" class="card-title">
                     {{currentCat.name}}</span></router-link>
                 <p>{{currentCat.age}} years old</p>

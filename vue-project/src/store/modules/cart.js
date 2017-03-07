@@ -1,4 +1,3 @@
-import shop from '../../api/shop'
 import * as types from '../mutation-types'
 
 const state = {
@@ -9,19 +8,6 @@ const state = {
 const getters = {
     cartLength: state => state.added.length,
     checkoutStatus: state => state.checkoutStatus
-};
-
-// actions
-const actions = {
-    checkout ({ commit, state }, cats) {
-        const savedCartItems = [...state.added]
-        commit(types.CHECKOUT_REQUEST)
-        shop.buyCats(
-            cats,
-            () => commit(types.CHECKOUT_SUCCESS),
-            () => commit(types.CHECKOUT_FAILURE, { savedCartItems })
-        )
-    }
 };
 
 // mutations
@@ -41,20 +27,19 @@ const mutations = {
         state.checkoutStatus = null
     },
 
-    [types.CHECKOUT_SUCCESS] (state) {
-        state.checkoutStatus = 'successful'
+    [types.CHECKOUT_SUCCESS] () {
+        console.log('successful');
     },
 
     [types.CHECKOUT_FAILURE] (state, { savedCartItems }) {
         // rollback to the cart saved before sending the request
         state.added = savedCartItems;
-        state.checkoutStatus = 'failed'
+        console.log('failed');
     }
 }
 
 export default {
     state,
     getters,
-    actions,
     mutations
 }

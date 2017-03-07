@@ -1,5 +1,6 @@
 import shop from '../../api/shop'
 import * as types from '../mutation-types'
+import helper from '../helperFunctions'
 
 // initial state
 const state = {
@@ -15,8 +16,12 @@ const getters = {
 // actions
 const actions = {
     getAllCats ({ commit }) {
-        shop.getCats().then(cats => {
-            commit(types.RECEIVE_CATS, { cats: cats.body })
+        shop.getCats().then(response => {
+            let cats = response.body.map(cat => {
+                cat.aviable = true;
+                return cat;
+            });
+            commit(types.RECEIVE_CATS, { cats })
         })
     }
 };
@@ -29,11 +34,11 @@ const mutations = {
     },
 
     [types.ADD_TO_CART] (state, { id }) {
-        state.cats = state.cats.filter(p => p.id !== id)
+        state.cats = helper.changeState(state.cats, id, false)
     },
 
     [types.REMOVE_CAT_FROM_CART] (state, { id }) {
-        state.cats.push(state.all.filter(p => p.id === id)[0])
+        state.cats = helper.changeState(state.cats, id, true)
     },
 
     [types.FILTER_CATS] (state, { filterState }) {
@@ -55,6 +60,13 @@ const mutations = {
             return matchAge && matchPrice && matchSterile && matchSize && matchDensity && matchColor;
 
         })
+    },
+
+    [types.CHECKOUT_SUCCESS] (state) {
+        state.cats = state.cats.map(cat => {
+            cat.aviable = true;
+            return cat;
+        });
     }
 };
 

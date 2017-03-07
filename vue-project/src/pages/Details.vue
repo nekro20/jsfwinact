@@ -15,33 +15,40 @@
                 <tbody>
                 <tr>
                     <td>Age</td>
-                    <td>Size</td>
+                    <td>{{currentCat.age}}</td>
                 </tr>
                 <tr>
                     <td>Fur density</td>
-                    <td>Fur color</td>
+                    <td>{{currentCat.furDensity}}</td>
                 </tr>
                 <tr>
-                    <td>5 year old</td>
-                    <td>medium</td>
+                    <td>Size</td>
+                    <td>{{currentCat.size}}</td>
                 </tr>
                 <tr>
-                    <td>high</td>
-                    <td>white</td>
+                    <td>Color</td>
+                    <td>{{currentCat.color}}</td>
+                </tr>
+                <tr>
+                    <td>Sterile</td>
+                    <td>{{currentCat.sterile ? 'yes' : 'no'}}</td>
                 </tr>
                 </tbody>
             </table>
             <p class="orange-text right-align">
-                <button class="btn-large waves-effect waves-light red right"><i class="material-icons left">add</i> Add
-                    to cart
+                <button class="btn-large waves-effect waves-light red right"
+                        @click="addToCart(currentCat)" :class="{ disabled: !currentCat.aviable }">
+                    <i class="material-icons left" v-show="currentCat.aviable">add</i>
+                    {{currentCat.aviable ? 'Add to cart' : 'Already added'}}
                 </button>
-                <span class="right" style="font-size: 2.5em; margin-right: 1em;">$50</span>
+                <span class="right" style="font-size: 2.5em; margin-right: 1em;">${{currentCat.price}}</span>
             </p>
         </div>
     </section>
 </template>
 
 <script>
+    import { mapActions } from 'vuex'
 
     export default {
         name: 'details',
@@ -50,6 +57,9 @@
                 const id = this.$route.params.id;
                 return this.$store.getters.allCats.filter(cat => cat.id === id)[0]
             }
-        }
+        },
+        methods: mapActions([
+            'addToCart'
+        ])
     }
 </script>

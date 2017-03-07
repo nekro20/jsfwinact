@@ -5,7 +5,7 @@
                 <cart-item :id="item.id"></cart-item>
             </li>
             <li class="collection-item">
-                <button class="btn orange btn-large waves-effect left">
+                <button class="btn orange btn-large waves-effect left" @click="checkout">
                     <i class="material-icons left">shopping_basket</i>Checkout
                 </button>
                 <p class="secondary-content orange-text right-align" style="font-size: 1.5em;">${{totalSum}}</p>
@@ -16,7 +16,7 @@
 
 <script>
     import cartItem from '../components/cartItem.vue'
-    import { mapGetters } from 'vuex'
+    import { mapGetters, mapActions } from 'vuex'
 
     export default {
         name: 'cart',
@@ -26,7 +26,8 @@
                 return this.cartProducts.reduce((sum, current) => {return sum + current.price}, 0)
             }
         },
-        components: { cartItem }
+        components: { cartItem },
+        methods: mapActions([ 'checkout' ])
     }
 </script>
 
