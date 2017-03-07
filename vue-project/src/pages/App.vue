@@ -1,7 +1,7 @@
 <template>
     <main>
         <header-bar></header-bar>
-        <div class="container">
+        <div class="container full-height">
             <div class="section">
                 <div class="row">
                     <router-view></router-view>
@@ -37,5 +37,15 @@
 
     .icon-block .material-icons {
         font-size: inherit;
+    }
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .full-height {
+        flex-grow: 1;
     }
 </style>
