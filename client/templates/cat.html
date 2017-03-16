@@ -1,0 +1,20 @@
+<template name="Cat">
+  <div class="col s6">
+    <div class="card horizontal hoverable grey lighten-4">
+      <div class="card-image waves-effect waves-block waves-light">
+        <a href="#detail-page"><img src="{{image}}"></a>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content" style="position: relative;">
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          <a href="#detail-page" class="card-title">{{name}}</a>
+          <p>{{FormatPlural age "year"}} old</p>
+          <p>{{color}}</p>
+        </div>
+        <div class="card-action">
+          <span class="orange-text">{{FormatMoney price}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
