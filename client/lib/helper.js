@@ -5,4 +5,6 @@ Template.registerHelper('FormatPlural', (count, noun, suffix) => {
   return `${count} ${noun}${count !== 1 ? suffix : ''}`;
 });
 
-Template.registerHelper('FormatMoney', (number) => '$' + number.toLocaleString());
+Template.registerHelper('FormatMoney', (number) => {
+  return '$' + number.toLocaleString();
+});

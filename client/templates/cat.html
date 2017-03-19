@@ -1,20 +1,48 @@
 <template name="Cat">
-  <div class="col s6">
-    <div class="card horizontal hoverable grey lighten-4">
-      <div class="card-image waves-effect waves-block waves-light">
-        <a href="#detail-page"><img src="{{image}}"></a>
-      </div>
-      <div class="card-stacked">
-        <div class="card-content" style="position: relative;">
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-          <a href="#detail-page" class="card-title">{{name}}</a>
-          <p>{{FormatPlural age "year"}} old</p>
-          <p>{{color}}</p>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+
+        <div class="col s5 offset-s1">
+          <img style="width: 100%;" src="{{image}}">
         </div>
-        <div class="card-action">
-          <span class="orange-text">{{FormatMoney price}}</span>
+        <div class="col s4 offset-s1">
+          <h1>{{name}}</h1>
+          <table class="striped">
+            <thead>
+              <tr>
+                <th data-field="id">Feature</th>
+                <th data-field="name">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Age</td><td>{{FormatPlural age "year"}}</td></tr>
+              <tr><td>Sterile</td><td>{{sterile}}</td></tr>
+              <tr><td>Size</td><td>{{size}}</td></tr>
+              <tr><td>Color</td><td>{{color}}</td></tr>
+              <tr><td>Fur Density</td><td>{{furDensity}}</td></tr>
+            </tbody>
+          </table>
+          <p class="orange-text right-align">
+            <span style="font-size: 2.5em;">{{FormatMoney price}}</span>
+          </p>
+          {{#if isInCart}}
+            <p class="right-align">
+              <button class="btn-large waves-effect waves-light red" id="add"><i class="material-icons left">add</i> Add
+                to cart</button>
+            </p>
+          {{else}}
+            <p class="right-align">
+              <a href="/cart" class="btn-large waves-effect waves-light blue"><i class="material-icons
+              left">shopping_cart</i>
+                Go to cart</a>
+            </p>
+          {{/if}}
         </div>
+
       </div>
     </div>
   </div>
+
 </template>

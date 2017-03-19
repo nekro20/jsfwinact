@@ -2,6 +2,12 @@
     clear: both;
 }
 
+.logo {
+    font-size: 2.1rem;
+}
+
+/*materialize version fixes*/
+
 .btn-flat:focus, .btn-flat:hover {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: none;
@@ -12,6 +18,20 @@
 }
 .icon-block .material-icons {
     font-size: inherit;
+}
+
+nav ul a span.badge {
+    display: inline-block;
+    float: none;
+    margin-left: 4px;
+    line-height: 22px;
+    height: 22px;
+    position: static;
+}
+
+.input-field label {
+    font-size: 0.8rem !important;
+    transform: translateY(-140%) !important;
 }
 
 .card a.card-title {
