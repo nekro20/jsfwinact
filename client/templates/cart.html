@@ -1,15 +1,12 @@
 <template name="Cart">
-
   <div class="container">
     <div class="section">
       <div class="row">
         <div class="col s10 offset-s1">
           <ul class="collection">
-
             {{#each cats}}
               {{> CatInCart}}
             {{/each}}
-
             <li class="collection-item">
               {{#if total}}
                 <button class="btn orange btn-large waves-effect left" id="checkout">
@@ -25,5 +22,4 @@
       </div>
     </div>
   </div>
-
 </template>
