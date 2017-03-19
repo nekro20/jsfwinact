@@ -8,6 +8,10 @@ import './home.html';
 
 export const state = new ReactiveDict();
 
+Template.Filters.onRendered(function() {
+  $('#furdensity').material_select();
+});
+
 Template.Filters.onCreated(function() {
   state.clear();
   Meteor.subscribe('cats');
