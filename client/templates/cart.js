@@ -31,6 +31,6 @@ Template.Cart.events({
   'click #checkout'(event, instance) {
     event.preventDefault();
     alert('Thank you for purchase!'); //TODO: replace by modal
-    Meteor.call('clearCart')
+    Meteor.call('cart.clear');
   },
 });
