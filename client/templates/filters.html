@@ -42,7 +42,7 @@
         <p>Size:</p>
         {{#each size in sizes}}
           <p>
-            <input type="checkbox" class="with-gap" name="sizes" id="size-{{size}}" value="{{size}}" />
+            <input type="radio" class="with-gap" name="sizes" id="size-{{size}}" value="{{size}}" />
             <label for="size-{{size}}" class="black-text">{{size}}</label>
           </p>
         {{/each}}
