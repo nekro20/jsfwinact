@@ -9,11 +9,11 @@
               <p>Price range:</p>
               <div class="row" style="margin-bottom: 0">
                 <div class="input-field col s6">
-                  <input placeholder="0" id="pricefrom" type="number">
+                  <input min="{{priceMin}}" max="{{priceMax}}" placeholder="{{priceMin}}" id="pricefrom" type="number">
                   <label for="pricefrom">From</label>
                 </div>
                 <div class="input-field col s6">
-                  <input placeholder="50000" id="priceto" type="number">
+                  <input min="{{priceMin}}" max="{{priceMax}}" placeholder="{{priceMax}}" id="priceto" type="number">
                   <label for="priceto">To</label>
                 </div>
               </div>
@@ -22,11 +22,11 @@
               <p>Age:</p>
               <div class="row" style="margin-bottom: 0">
                 <div class="input-field col s6">
-                  <input placeholder="0" id="agefrom" type="number">
+                  <input min="{{ageMin}}" max="{{ageMax}}" placeholder="{{ageMin}}" id="agefrom" type="number">
                   <label for="agefrom">From</label>
                 </div>
                 <div class="input-field col s6">
-                  <input placeholder="20" id="ageto" type="number">
+                  <input min="{{ageMin}}" max="{{ageMax}}" placeholder="{{ageMax}}" id="ageto" type="number">
                   <label for="ageto">To</label>
                 </div>
               </div>
@@ -78,9 +78,13 @@
         </div>
         <div class="col s9">
 
-          {{#each cats}}
-            {{> CatInList}}
-          {{/each}}
+          {{#if cats}}
+            {{#each cats}}
+              {{> CatInList}}
+            {{/each}}
+          {{else}}
+            <p class="center-align">Found nothing.</p>
+          {{/if}}
 
         </div>
       </div>

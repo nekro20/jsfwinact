@@ -22,12 +22,12 @@ Template.Home.helpers({
     //prepare filter from state
     let state = Template.instance().state.all();
     params.price = {
-      $gt: state.priceFrom ? Number(state.priceFrom) : 0,
-      $lt: state.priceTo ? Number(state.priceTo) : Infinity,
+      $gte: state.priceFrom ? Number(state.priceFrom) : 0,
+      $lte: state.priceTo ? Number(state.priceTo) : Infinity,
     };
     params.age = {
-      $gt: state.ageFrom ? Number(state.ageFrom) : 0,
-      $lt: state.ageTo ? Number(state.ageTo) : Infinity,
+      $gte: state.ageFrom ? Number(state.ageFrom) : 0,
+      $lte: state.ageTo ? Number(state.ageTo) : Infinity,
     };
     if (state.sterile) {
       params.sterile = true;
@@ -41,7 +41,7 @@ Template.Home.helpers({
     if (state.colors && state.colors.length > 0) {
       params.color = { $all: state.colors };
     }
-    return Cats.find(params);
+    return Cats.find(params).fetch();
   },
   furDensities() {
     let select = $('#furdensity');
@@ -54,6 +54,18 @@ Template.Home.helpers({
   },
   colors() {
     return _.uniq(_.flatten(Cats.find().map(x => x.color)));
+  },
+  priceMin() {
+    return _.min(Cats.find().map(x => x.price));
+  },
+  priceMax() {
+    return _.max(Cats.find().map(x => x.price));
+  },
+  ageMin() {
+    return _.min(Cats.find().map(x => x.age));
+  },
+  ageMax() {
+    return _.max(Cats.find().map(x => x.age));
   },
 });
 
