@@ -4,7 +4,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { Cats } from '../../lib/cats.js';
 
-import './home.html';
+import './filters.html';
 
 export const state = new ReactiveDict();
 
