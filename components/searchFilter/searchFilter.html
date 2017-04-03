@@ -1,0 +1,91 @@
+<link href="../../bower_components/paper-input/paper-input.html" rel="import">
+<link href="../../bower_components/paper-checkbox/paper-checkbox.html" rel="import">
+<link href="../../bower_components/paper-toggle-button/paper-toggle-button.html" rel="import">
+<link href="../../bower_components/paper-item/paper-item.html" rel="import">
+<link href="../../bower_components/paper-dropdown-menu/paper-dropdown-menu.html" rel="import">
+<link href="../../bower_components/paper-button/paper-button.html" rel="import">
+<link href="../../bower_components/paper-listbox/paper-listbox.html" rel="import">
+<link href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html" rel="import">
+
+<link href="../sharedStyles.html" rel="import">
+<dom-module id="search-filter">
+    <template>
+        <style include="shared-styles iron-flex iron-flex-alignment"></style>
+        <div class="filterForm">
+            <ul class="collection z-depth-1">
+                <li class="collection-item">
+                    <p>Price range:</p>
+                    <div class="layout horizontal" style="margin-bottom: 0">
+                        <div class="col">
+                            <paper-input placeholder="0" id="amountFrom" label="From" type="number"></paper-input>
+                        </div>
+                        <div class="col">
+                            <paper-input placeholder="0" id="amountTo" label="To" type="number"></paper-input>
+                        </div>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <p>Age:</p>
+                    <div class="layout horizontal" style="margin-bottom: 0">
+                        <div class="col">
+                            <paper-input placeholder="0" id="ageFrom" label="From" type="number"></paper-input>
+                        </div>
+                        <div class="col">
+                            <paper-input placeholder="20" id="ageTo" label="To" type="number"></paper-input>
+                        </div>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <p>Only kittens:</p>
+                    <paper-toggle-button id="isKitten">Yes</paper-toggle-button>
+                </li>
+                <li class="collection-item">
+                    <p>Size:</p>
+                    <p>
+                        <paper-checkbox id="isSmall">Small</paper-checkbox>
+                    </p>
+                    <p>
+                        <paper-checkbox id="isMedium">Medium</paper-checkbox>
+                    </p>
+                    <p>
+                        <paper-checkbox id="isLarge">Large</paper-checkbox>
+                    </p>
+                </li>
+                <li class="collection-item">
+                    <p>
+                        <paper-dropdown-menu id="furDensity" label="Fur density:">
+                            <paper-listbox class="dropdown-content" selected="0">
+                                <paper-item>Any</paper-item>
+                                <paper-item>Low</paper-item>
+                                <paper-item>Medium</paper-item>
+                                <paper-item>High</paper-item>
+                            </paper-listbox>
+                        </paper-dropdown-menu>
+                    </p>
+                </li>
+                <li class="collection-item">
+                    <p>Fur color:</p>
+                    <p>
+                        <paper-checkbox id="isBlack">Black</paper-checkbox>
+                    </p>
+                    <p>
+                        <paper-checkbox id="isWhite">White</paper-checkbox>
+                    </p>
+                    <p>
+                        <paper-checkbox id="isRed">Red</paper-checkbox>
+                    </p>
+                    <p>
+                        <paper-checkbox id="isGray">Gray</paper-checkbox>
+                    </p>
+                    <p>
+                        <paper-checkbox id="isTabby">Tabby</paper-checkbox>
+                    </p>
+                </li>
+                <li class="collection-item center-align">
+                    <paper-button on-click="onSubmit" style="width: 100%">Apply filters</paper-button>
+                </li>
+            </ul>
+        </div>
+    </template>
+    <script src="searchFilter.js"></script>
+</dom-module>

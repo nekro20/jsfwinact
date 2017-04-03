@@ -1,0 +1,22 @@
+{
+  "name": "polymer2_cats",
+  "version": "1.0.0",
+  "description": "This is test application, that was written on Polymer 2.0 version.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.epam.com/sergey_abramkin/trainings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jsonfile": "^2.4.0",
+    "polyserve": "^0.16.0"
+  }
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "58b66b7ef5f505c72767b4c6",
+    "name": "Shirley",
+    "furColor": [
+      "red",
+      "gray"
+    ],
+    "price": 43758,
+    "age": 4,
+    "furDensity": "High",
+    "size": "Large",
+    "image": "resources/images/cats1.jpg"
+  },
+  {
+    "id": "58b66b7e27c7b7bd0a05453a",
+    "name": "Elba",
+    "furColor": [
+      "black",
+      "gray"
+    ],
+    "price": 48886,
+    "age": 8,
+    "furDensity": "Medium",
+    "size": "Large",
+    "image": "resources/images/cats2.jpg"
+  },
+  {
+    "id": "58b66b7e8e45db7ef733fb7f",
+    "name": "Castro",
+    "furColor": [
+      "red",
+      "white"
+    ],
+    "price": 19287,
+    "age": 2,
+    "furDensity": "Medium",
+    "size": "Large",
+    "image": "resources/images/cats5.jpg"
+  },
+  {
+    "id": "58b66b7ec9a56a0812159e78",
+    "name": "Mitchell",
+    "furColor": [
+      "gray",
+      "black"
+    ],
+    "price": 36342,
+    "age": 9,
+    "furDensity": "High",
+    "size": "Small",
+    "image": "resources/images/cats3.jpg"
+  },
+  {
+    "id": "58b66b7ecf8702e4dc48d04d",
+    "name": "Salinas",
+    "furColor": [
+      "white",
+      "black"
+    ],
+    "price": 1498,
+    "age": 6,
+    "furDensity": "Medium",
+    "size": "Medium",
+    "image": "resources/images/cats3.jpg"
+  },
+  {
+    "id": "58b66b7e4856c08f3e281256",
+    "name": "Alston",
+    "furColor": [
+      "black",
+      "red"
+    ],
+    "price": 49989,
+    "age": 9,
+    "furDensity": "High",
+    "size": "Large",
+    "image": "resources/images/cats3.jpg"
+  },
+  {
+    "id": "58b66b7e6430cf92564a0fa0",
+    "name": "Mattie",
+    "furColor": [
+      "black",
+      "black"
+    ],
+    "price": 24664,
+    "age": 1,
+    "furDensity": "Medium",
+    "size": "Medium",
+    "image": "resources/images/cats4.jpg"
+  },
+  {
+    "id": "58b66b7ed11d4016ebcef4e0",
+    "name": "Kayla",
+    "furColor": [
+      "black",
+      "white"
+    ],
+    "price": 33970,
+    "age": 9,
+    "furDensity": "Low",
+    "size": "Medium",
+    "image": "resources/images/cats1.jpg"
+  },
+  {
+    "id": "58b66b7eb8336ca901dffa14",
+    "name": "Johnson",
+    "furColor": [
+      "black",
+      "black"
+    ],
+    "price": 15312,
+    "age": 8,
+    "furDensity": "High",
+    "size": "Large",
+    "image": "resources/images/cats4.jpg"
+  },
+  {
+    "id": "58b66b7ea5c35cdf098051ed",
+    "name": "Susana",
+    "furColor": [
+      "white",
+      "gray"
+    ],
+    "price": 43659,
+    "age": 10,
+    "furDensity": "Medium",
+    "size": "Medium",
+    "image": "resources/images/cats4.jpg"
+  },
+  {
+    "id": "58b66b7e8e0c9378c57d97ab",
+    "name": "Vaughn",
+    "furColor": [
+      "gray",
+      "red"
+    ],
+    "price": 30862,
+    "age": 12,
+    "furDensity": "Medium",
+    "size": "Large",
+    "image": "resources/images/cats3.jpg"
+  },
+  {
+    "id": "58b66b7e44550c6f4d96cd7e",
+    "name": "Wilda",
+    "furColor": [
+      "black",
+      "white"
+    ],
+    "price": 9273,
+    "age": 1,
+    "furDensity": "High",
+    "size": "Medium",
+    "image": "resources/images/cats2.jpg"
+  },
+  {
+    "id": "58b66b7efacae8c665d09403",
+    "name": "Liza",
+    "furColor": [
+      "gray",
+      "red"
+    ],
+    "price": 44181,
+    "age": 2,
+    "furDensity": "Medium",
+    "size": "Large",
+    "image": "resources/images/cats1.jpg"
+  },
+  {
+    "id": "58b66b7e98fc7c5702d3baf8",
+    "name": "Colon",
+    "furColor": [
+      "red",
+      "gray"
+    ],
+    "price": 14803,
+    "age": 2,
+    "furDensity": "Low",
+    "size": "Large",
+    "image": "resources/images/cats3.jpg"
+  },
+  {
+    "id": "58b66b7e887129f8fd4f2e92",
+    "name": "Savage",
+    "furColor": [
+      "gray",
+      "black"
+    ],
+    "price": 10721,
+    "age": 7,
+    "furDensity": "High",
+    "size": "Small",
+    "image": "resources/images/cats2.jpg"
+  },
+  {
+    "id": "58b66b7ee96c60e8899e5c5b",
+    "name": "Compton",
+    "furColor": [
+      "red",
+      "white"
+    ],
+    "price": 48643,
+    "age": 8,
+    "furDensity": "Medium",
+    "size": "Large",
+    "image": "resources/images/cats3.jpg"
+  },
+  {
+    "id": "58b66b7e6ef486eb8554e681",
+    "name": "Darcy",
+    "furColor": [
+      "red",
+      "white"
+    ],
+    "price": 38907,
+    "age": 7,
+    "furDensity": "Low",
+    "size": "Small",
+    "image": "resources/images/cats2.jpg"
+  },
+  {
+    "id": "58b66b7e5494232962f886a7",
+    "name": "Paulette",
+    "furColor": [
+      "black",
+      "black"
+    ],
+    "price": 34485,
+    "age": 8,
+    "furDensity": "Medium",
+    "size": "Large",
+    "image": "resources/images/cats1.jpg"
+  }
+]

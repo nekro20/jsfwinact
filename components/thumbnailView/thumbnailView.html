@@ -1,0 +1,27 @@
+<link href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html" rel="import">
+
+<link href="../sharedStyles.html" rel="import">
+<link href="../../components/thumbnail/thumbnail.html" rel="import">
+<dom-module id="thumbnail-view">
+    <template>
+        <style include="shared-styles iron-flex iron-flex-alignment"></style>
+        <style>
+            thumbnail-info {
+                padding: 0 0.75rem;
+                flex-grow: 1;
+            }
+            .viewContainer {
+                display: flex;
+                flex-flow: row wrap;
+            }
+        </style>
+        <div class="viewContainer">
+            <dom-repeat items="{{ items }}" as="item">
+                <template>
+                    <thumbnail-info item="{{ item }}" disabled$="{{ item.isInCart }}"></thumbnail-info>
+                </template>
+            </dom-repeat>
+        </div>
+    </template>
+    <script src="thumbnailView.js"></script>
+</dom-module>

@@ -1,0 +1,62 @@
+<link href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html" rel="import">
+<link href="../../bower_components/paper-button/paper-button.html" rel="import">
+<link href="../../bower_components/iron-image/iron-image.html" rel="import">
+
+<link href="../sharedStyles.html" rel="import">
+<dom-module id="detail-page">
+    <template>
+        <style include="shared-styles iron-flex iron-flex-alignment"></style>
+        <style>
+            .addToCartBtn {
+                color: white;
+                background-color: #F44336;
+            }
+            .itemPreview {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+        <div class="layout horizontal">
+            <div class="flex">
+                <iron-image class="itemPreview" src="{{ item.image }}" sizing="contain"></iron-image>
+            </div>
+            <div class="flex">
+                <h1>{{ item.name }}</h1>
+                <table class="striped">
+                    <thead>
+                    <tr>
+                        <th data-field="id">Feature</th>
+                        <th data-field="name">Value</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Age</td>
+                        <td>{{ item.age }}</td>
+                    </tr>
+                    <tr>
+                        <td>Fur density</td>
+                        <td>{{ item.furDensity }}</td>
+                    </tr>
+                    <tr>
+                        <td>Fur color</td>
+                        <td>{{ _getItemFurColor(item) }}</td>
+                    </tr>
+                    <tr>
+                        <td>Size</td>
+                        <td>{{ item.size }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="orange-text right-align">
+                    <paper-button class="addToCartBtn right" on-click="addToCart" disabled$="{{ item.isInCart }}">
+                        <iron-icon icon="add"></iron-icon>
+                        ADD TO CART
+                    </paper-button>
+                    <span class="right" style="font-size: 2.5em; margin-right: 1em;">${{ item.price }}</span>
+                </p>
+            </div>
+        </div>
+    </template>
+    <script src="detailPage.js"></script>
+</dom-module>

@@ -1,0 +1,42 @@
+<link href="../../bower_components/paper-icon-button/paper-icon-button.html" rel="import">
+<link href="../../bower_components/paper-button/paper-button.html" rel="import">
+<link href="../../bower_components/iron-icon/iron-icon.html" rel="import">
+
+<link href="../sharedStyles.html" rel="import">
+<dom-module id="cart-page">
+    <template>
+        <style include="shared-styles"></style>
+        <style>
+            #checkout-button {
+                margin-top: 1%;
+            }
+        </style>
+        <div class="col s10 offset-s1">
+            <ul class="collection">
+                <dom-repeat items="{{ items }}" filter="isInCart" observe="isInCart">
+                    <template>
+                        <li class="collection-item avatar">
+                            <img src="{{ item.image }}" class="circle">
+                            <span class="title">{{ item.name }}</span>
+                            <p>
+                                {{ item.age}} years old
+                                <br>
+                                {{ _getFurColorsString(item) }}
+                            </p>
+                            <span class="secondary-content orange-text" style="font-size: 1.5em;">${{ item.price}}</span>
+                            <paper-icon-button icon="delete" class="secondary-content grey-text" style="border-radius: 50%; top: 41px; padding: 0 8px;" on-click="removeCheckoutItem"></paper-icon-button>
+                        </li>
+                    </template>
+                </dom-repeat>
+                <li class="collection-item">
+                    <paper-button id="checkout-button" class="orange btn-large" on-click="checkoutItems">
+                        <iron-icon icon="shopping-basket"></iron-icon>
+                        <span>Checkout</span>
+                    </paper-button>
+                    <p class="secondary-content orange-text right-align" style="font-size: 1.5em;">${{ getCheckoutItemsSum(items.*) }}</p>
+                </li>
+            </ul>
+        </div>
+    </template>
+    <script src="cartPage.js"></script>
+</dom-module>

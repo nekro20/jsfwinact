@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../bower_components/web-component-tester/browser.js"></script>
+    <link href="../components/cartPage/cartPage.html" rel="import">
+</head>
+<body>
+
+<test-fixture id="cart-page-test">
+    <template>
+        <cart-page></cart-page>
+    </template>
+</test-fixture>
+
+<script>
+    suite('<cart-page>', function () {
+        var cartPage;
+        setup(function () {
+            cartPage = fixture('cart-page-test');
+            cartPage.items = [
+                {
+                    "id": "58b66b7ef5f505c72767b4c6",
+                    "name": "Shirley",
+                },
+                {
+                    "id": "58b66b7ef5f505c72767b4c6",
+                    "name": "Shirley",
+                    "isInCart": true
+                }];
+        });
+        test('check grid info creation', function () {
+            assert(cartPage.shadowRoot.querySelectorAll('ul li').length === 1, 'Grid dom created');
+        });
+        test('check checkout functionality', function () {
+            var checkoutButton = cartPage.shadowRoot.querySelector('#checkout-button');
+            checkoutButton.click();
+            assert.equal(cartPage.items.filter((item) => item.isInCart).length, 0);
+        });
+    });
+</script>
+
+</body>
+</html>

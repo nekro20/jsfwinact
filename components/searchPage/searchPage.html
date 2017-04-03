@@ -1,0 +1,37 @@
+<link href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html" rel="import">
+<link href="../../bower_components/iron-ajax/iron-ajax.html" rel="import">
+
+<link href="../sharedStyles.html" rel="import">
+<link href="../../components/searchFilter/searchFilter.html" rel="import">
+<link href="../../components/thumbnailView/thumbnailView.html" rel="import">
+<dom-module id="search-page">
+    <template>
+        <style include="shared-styles iron-flex iron-flex-alignment"></style>
+        <style>
+            .pageContent .filter-container {
+                flex-grow: 1;
+                width: 25%;
+            }
+
+            .pageContent .search-result-container {
+                flex-grow: 3;
+                width: 75%;
+            }
+        </style>
+        <iron-ajax id="getCatsRequest"
+                   url="/cats"
+                   handle-as="json"
+                   content-type="application/json"
+                   on-response="onSearched">
+        </iron-ajax>
+        <div class="pageContent row">
+            <div class="col filter-container">
+                <search-filter on-submit="search"></search-filter>
+            </div>
+            <div class="col search-result-container">
+                <thumbnail-view id="thumbnailView" items="{{ items }}"></thumbnail-view>
+            </div>
+        </div>
+    </template>
+    <script src="searchPage.js"></script>
+</dom-module>

@@ -1,0 +1,82 @@
+<link rel="import" href="../../bower_components/app-layout/app-layout.html">
+<link href="../../bower_components/iron-icons/iron-icons.html" rel="import">
+<link href="../../bower_components/paper-button/paper-button.html" rel="import">
+<link href="../../bower_components/app-route/app-location.html" rel="import">
+<link href="../../bower_components/app-route/app-route.html" rel="import">
+<link href="../../bower_components/iron-pages/iron-pages.html" rel="import">
+
+
+<link href="../cartPage/cartPage.html" rel="import">
+<link href="../detailPage/detailPage.html" rel="import">
+<link href="../searchPage/searchPage.html" rel="import">
+<link href="../../components/sharedStyles.html" rel="import">
+
+<dom-module id="main-page">
+    <template>
+        <style include="shared-styles"></style>
+        <style>
+            app-header {
+                background-color: #29b6f6;
+            }
+            app-toolbar .brand {
+                color: #fff;
+                display: inline-block;
+                font-size: 2.1rem;
+                padding: 0;
+                white-space: nowrap;
+            }
+            app-toolbar {
+                color: white;
+                width: 70%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+            }
+            .content {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin: auto;
+                width: 70%;
+                max-width: 1280px;
+                display: flex;
+            }
+            .content search-page, .content detail-page, .content cart-page {
+                width: 100%;
+            }
+            .container {
+                margin: auto;
+            }
+        </style>
+
+        <app-location route="{{ route }}" use-hash-as-path></app-location>
+        <app-route
+                route="{{ route }}"
+                pattern="/:page"
+                data="{{ routeData }}">
+        </app-route>
+        <app-header reveals>
+            <app-toolbar>
+                <div class="brand">Cats For Everyone</div>
+                <div class="menu">
+                    <paper-button on-click="goToCartPage">
+                        <iron-icon icon="shopping-cart"></iron-icon>
+                        <span>{{ getCartAmount(items.*) }}</span>
+                    </paper-button>
+                </div>
+            </app-toolbar>
+        </app-header>
+        <iron-pages class="content" selected="{{ routeData.page }}" attr-for-selected="name" fallback-selection="search">
+            <search-page name="search" items="{{ items }}" on-show-thumbnail-detail="showThumbnailDetail" on-add-to-cart="onAddToCart"></search-page>
+            <cart-page name="cart" items="{{ items }}" on-cart-empty="goToSearchPage"></cart-page>
+            <detail-page name="detail" item="{{ selectedItem }}" on-add-to-cart="onAddToCart"></detail-page>
+        </iron-pages>
+        <footer class="page-footer orange">
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                </div>
+            </div>
+        </footer>
+    </template>
+    <script src="mainPage.js"></script>
+</dom-module>

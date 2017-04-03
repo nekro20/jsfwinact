@@ -1,0 +1,42 @@
+<link href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html" rel="import">
+<link href="../../bower_components/paper-button/paper-button.html" rel="import">
+<link href="../../bower_components/iron-icon/iron-icon.html" rel="import">
+
+<link href="../sharedStyles.html" rel="import">
+<dom-module id="thumbnail-info">
+    <template>
+        <style include="shared-styles iron-flex iron-flex-alignment"></style>
+        <style>
+            .addToCartBtn {
+                position: absolute;
+                min-width: 40px;
+                width: 40px;
+                height: 40px;
+                color: white;
+                background-color: red;
+                border-radius: 50%;
+                right: 24px;
+                bottom: 30px;
+            }
+        </style>
+        <div class="card layout horizontal hoverable grey lighten-4">
+                <div class="card-image waves-effect waves-block waves-light" on-click="showDetailThumbnailInfo">
+                    <a href="javascript:void(0)"><img src="{{ item.image }}"></a>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content" style="position: relative;">
+                        <a href="#/detail" class="card-title">{{ item.name }}</a>
+                        <p>{{ item.age }} year old</p>
+                        <p>{{ _getColors(item) }}</p>
+                    </div>
+                    <div class="card-action">
+                        <span class="orange-text">${{ item.price }}</span>
+                        <paper-button class="addToCartBtn" disabled$="{{ disabled }}">
+                            <iron-icon icon="add" on-click="addToCart"></iron-icon>
+                        </paper-button>
+                    </div>
+                </div>
+            </div>
+    </template>
+    <script src="thumbnail.js"></script>
+</dom-module>
